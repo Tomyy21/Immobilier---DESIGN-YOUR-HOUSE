@@ -1,0 +1,645 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@200 & display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0,0,0,0.75)),url(images/background.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+
+}
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button{
+    width: 200PX;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color : #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+
+
+/* Cuisine */
+
+.Cuisine {
+    background-color: #343432;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.Cuisine .overlap-wrapper {
+    background-color: black;
+    overflow: hidden;
+    width: inherit;
+    height: 100vh;
+}
+
+.Cuisine .overlap {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    top:-536;
+}
+
+.Cuisine .text-wrapper {
+    position: absolute;
+    width: 610px;
+    top: 69px;
+    left: 8%;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 111px;
+    letter-spacing: 0;
+    line-height: normal;
+    z-index: 2;
+}
+
+.Cuisine .text-cuisine {
+    position: absolute;
+    top: 320px;
+    left:8%;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #fff;
+    font-size: 21px;
+    letter-spacing: 0;
+    line-height: normal;
+    z-index: 2;
+}
+
+.image-cuisine {
+    position: relative;
+    width: 875px;
+    height: 1024px;
+    margin-right: -80px;
+    float: right;
+    clip-path:polygon(50% 0%, 0% 100%, 100000% 100%) ;
+    filter:brightness(.50) ;
+    z-index: 1;
+}
+
+
+
+.Cuisine .btn-d-avantage { 
+    position: absolute;
+    width: 234px;
+    height: 56px;
+    top: 700px;
+    left: 20%;
+}
+.Cuisine .overlap-group { 
+    position: relative; 
+    width: 232px;
+    height: 56px;
+    background-color: #000000; 
+    border-radius: 32px;
+}
+
+.Cuisine .div{
+    position: absolute;
+    height: 24px;
+    top: 14px;
+    left: 42px;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: -0.06px;
+    line-height: 24px;
+
+}
+
+
+.Cuisine .ellipse { 
+    position: absolute; 
+    width: 1039px;
+    height: 1001px;
+    top: -500px;
+    left: -24%;
+    background-color: #ffffff;
+    border-radius:519.5px/500.5px;
+    box-shadow: var (--card-shadow);
+    opacity: 0.15;
+}
+.Cuisine .ellipse-2 { 
+    position: absolute; 
+    width: 851px;
+    height: 820px;
+    top: -500px;
+    left: -20%px;
+    background-color: #ffffff;
+    border-radius:425.5px/410px;
+    box-shadow: var (--card-shadow);
+    opacity: 0.15;
+}
+
+.btn-avantage {
+    font-size:x-large;
+    font-style: italic;
+}
+
+
+
+/* ****BTN**** */
+
+
+.container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+  }
+  
+  .btnCuisine {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+  
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+  
+  .btnCuisine:hover {
+    transition: 1s ease-in-out;
+    background: #1d2023;
+  }
+  
+  .btnCuisine:hover svg {
+    stroke-dashoffset: -480;
+  }
+
+  .Avantage {
+    position: fixed;
+    top:206px;
+    left: 170px;
+  }
+
+  .Btn-Davantage {
+    font-size: large;
+    font-style: italic;
+  }
+
+
+  /* ****Salon**** */
+
+  .container2 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/Salon-fond.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    height: 88%;
+  }
+
+  .col {
+    width: 220px;
+    height: 280px;
+    flex-basis: 50%;
+    margin-top: 80px;
+    position: relative;
+    margin-left: 50px;
+    margin-top: -170px;
+  }
+
+    
+  h1 {
+    color: #fff;
+    font-size: 100px;
+    font-family: 'Montserrat';
+  }
+
+  .container2 p{
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .container2 button {
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background:#fff ;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 70px;
+  }
+
+  /* *******CARTE SALON 1 - 4******** */
+  
+.container2 .card {
+    width: 220px;
+    height: 280px;
+    position: absolute;
+    display: inline-block;
+    border-radius: 10px;
+    /* padding: 15px 25px; */
+    box-sizing: border-box;
+    cursor: pointer;
+    /* margin: 21px 21px; */
+    background-position: center;
+    background-size:cover;
+    transition:0.5s ease-in-out;
+    transform-style: preserve-3d;
+    margin-left: 200px;
+}
+
+.container2 .card:hover {
+    transform: rotateY(180deg);
+}
+
+.side{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 15px;
+}
+
+#side-front {
+    background-position: center;
+    background-size: 220px 280px ;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/Salon1.png);
+    z-index: 1;
+}
+
+#side-back {
+    background: rgb(65,65,63);
+    background: radial-gradient(circle, rgba(65,65,63,1) 0%, rgba(37,37,36,1) 100%);
+    transform: rotateY(180deg);
+}
+
+#side-back h5 {
+    color: #fff;
+    font-family: 'Montserrat';
+    margin: 15px 15px;
+    font-size: 21px;
+    text-align: center;
+    font-style: oblique;
+}
+
+#side-back p {
+    font-family: 'Montserrat';
+    margin: 7px;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 11px;
+} 
+
+#side-front h5 {
+    color: #ffffff ;
+    text-shadow: 0 0 3px #999;
+    text-align: center;
+    font-size: 21px;
+    margin-top: 30px;
+    font-style: oblique;
+}
+.col1 {
+    position: absolute;
+    margin-left: 35%;
+    margin-top: -450px;
+  }
+
+.col2 {
+    position: absolute;
+    margin-left: 55%;
+    margin-top: -450px;
+}
+
+.col2 #side-front {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/Salon2.png);
+
+}
+
+.col3 {
+    position: absolute;
+    margin-left: 55%;
+    margin-top: 190px;
+}
+
+.col3 #side-front {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/Salon4.png);
+
+}
+
+.col4 {
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 190px;
+}
+
+.col4 #side-front {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/Salon3.avif);
+
+}
+
+
+
+/* BED ROOM  */
+
+.hero {
+    background: #1d2026;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+
+.Bedroom .hero .btn-light-off{
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.Bedroom .hero .btn-light-on{
+    background: green;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.hero button .span-light-off {
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    z-index: 1;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    transition: 0.5s;
+}
+
+.hero button .span-light-on {
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    z-index: 1;
+    margin-left: 31px;
+    margin-bottom: 2px;
+}
+
+
+
+
+.lampe-container {
+    position: absolute;
+    top: 0px;
+    left: 22%;
+    width: 200px;
+}
+
+.lamp {
+    width: 100%;
+}
+
+
+
+
+.Lumiere_off {
+    position: absolute;
+    top: 98%;
+    left: 45%;
+    transform: translateX(-50%);
+    width: 700px;
+    opacity: 0;
+    transition:0.5s ease-in-out;
+}
+
+.Lumiere_on {
+    position: absolute;
+    top: 98%;
+    left: 45%;
+    transform: translateX(-50%);
+    width: 700px;
+    opacity: 100;
+    transition:0.5s ease-in-out;
+}
+
+
+
+
+.text-container {
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+
+.text-container h1 {
+    font-size: 80px;
+    font-weight: 400;
+}
+.text-container p {
+    font-weight: bold;
+}
+
+.text-container a {
+    text-decoration: none;
+    background: #00986f;
+    padding: 14px 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 40px;
+}
+
+.active {
+    background: green;
+}
+
+
+/* BACKYARD */
+
+.hero2 {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/BACKYARD.jpeg);
+    background-size: cover;
+    position: relative;
+}
+
+
+.title_jardin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 150px;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(#fff, #fff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -750px 0;
+    animation: backcolor 5s linear infinite alternate;
+}
+
+@keyframes backcolor {
+    100%{
+        background-position: 0 0;
+
+    }
+}
